@@ -24,20 +24,8 @@ void handle_event(SDL_Event &event, AppState &app_state) {
           app_state.toggleRunning();
           break;
 
-        case SDLK_SPACE:
-          app_state.togglePause();
-          break;
-
         case SDLK_r:
-          app_state.reset_data(static_cast<int>(app_state.getData().size()), BUBBLE_SORT);
-          break;
-
-        case SDLK_1:
-          app_state.setCurrentAlgorithm(BUBBLE_SORT);
-          break;
-
-        case SDLK_2:
-          app_state.setCurrentAlgorithm(MERGE_SORT);
+          app_state.reset_data(static_cast<int>(app_state.getData().size()));
           break;
       }
   }

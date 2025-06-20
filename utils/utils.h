@@ -5,11 +5,6 @@
 #include <SDL_rect.h>
 #include <vector>
 
-enum Algorithm {
-  BUBBLE_SORT,
-  MERGE_SORT
-};
-
 struct ElementState {
   int value;
   SDL_Color color;

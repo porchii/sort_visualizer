@@ -1,7 +1,7 @@
 #include "init.h"
 
-AppState::AppState(int n, Algorithm alg) {
-  reset_data(n, alg);
+AppState::AppState(int n) {
+  reset_data(n);
   draw_data();
 }
 
@@ -48,11 +48,4 @@ void AppState::highlightElement(int idx, SDL_Color color) {
 
 void AppState::setDelay(int ms) {
   delay = ms;
-}
-
-void AppState::startSorting() {
-  if (!data.empty()) {
-    sorting = true;
-    paused = false;
-  }
 }
