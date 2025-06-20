@@ -15,7 +15,7 @@
 class AppState {
 public:
   AppState(SDL_Renderer* renderer): renderer(renderer) {
-    reset_data(256);
+    reset_data(50);
     draw_data();
   };
 
@@ -53,7 +53,7 @@ public:
   std::vector<ElementState> &getData() { return data; }
 
 private:
-  int delay = 10;
+  int delay = 15;
 
   bool running = true;
   std::vector<ElementState> data;

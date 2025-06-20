@@ -13,4 +13,6 @@ void mergeSort(std::vector<ElementState>& data, int l, int r, AppState& app_stat
 
 void start_mergeSort(AppState& app_state);
 
+void insertionSort(AppState& app_state);
+
 #endif //SORT_H

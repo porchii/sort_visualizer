@@ -19,6 +19,9 @@ void handle_event(SDL_Event &event, AppState &app_state) {
         case SDLK_m:
           start_mergeSort(app_state);
           break;
+        case SDLK_i:
+          insertionSort(app_state);
+          break;
 
         case SDLK_ESCAPE:
           app_state.toggleRunning();
