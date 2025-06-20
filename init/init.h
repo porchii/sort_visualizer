@@ -15,7 +15,7 @@
 class AppState {
 public:
   AppState(SDL_Renderer* renderer): renderer(renderer) {
-    reset_data(80, BUBBLE_SORT);
+    reset_data(256, BUBBLE_SORT);
     draw_data();
   };
 
